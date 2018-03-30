@@ -26,5 +26,16 @@ namespace HomeShare.DAL
         }
 
         #endregion
+        #region CTOR
+        public Options()
+        {
+
+        }
+        public Options(int id, string libelle)
+        {
+            IdOption = id;
+            Libelle = libelle; 
+        }
+        #endregion
     }
 }
