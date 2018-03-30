@@ -1,0 +1,115 @@
+﻿
+@model HomeShareMVC.Models.ajouterMembreModel
+
+@{
+    ViewBag.Title = "ajouterUnMembre";
+}
+
+<h2>ajouterUnMembre</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Membre</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.IdMembre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IdMembre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IdMembre, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Nom, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.unMembre.Nom, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="text" name="Nom" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Nom, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Prenom, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.unMembre.Prenom, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="text" name="Prenom" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Prenom, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @* @Html.EditorFor(model => model.unMembre.Email, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="text" name="Email" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Pays, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.Pays, new { htmlAttributes = new { @class = "form-control" } })*@
+                <select name="Pays">
+                    @foreach (var item in Model.listPays)
+                    {
+                         <option value="@item.IdPays">@item.Libelle</option>
+                    }
+                </select>
+
+                @Html.ValidationMessageFor(model => model.unMembre.Pays, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Telephone, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.unMembre.Telephone, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="text" name="Telephone" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Telephone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Login, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.unMembre.Login, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="text" name="Login" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Login, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unMembre.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.unMembre.Password, new { htmlAttributes = new { @class = "form-control" } })*@
+                <input class="text-danger" type="password" name="Password" required />
+                @Html.ValidationMessageFor(model => model.unMembre.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.unMembre.PhotoUser, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.unMembre.PhotoUser, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.unMembre.PhotoUser, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Confirmer" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

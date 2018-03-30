@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeShareMVC", "HomeShareMVC\HomeShareMVC.csproj", "{BC24BDA5-F5DB-4A18-9680-6A1A9780580D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeShare.DAL", "HomeShare.DAL\HomeShare.DAL.csproj", "{376A89B5-A8F5-4719-AC11-AE82C3A04A9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC24BDA5-F5DB-4A18-9680-6A1A9780580D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC24BDA5-F5DB-4A18-9680-6A1A9780580D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC24BDA5-F5DB-4A18-9680-6A1A9780580D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC24BDA5-F5DB-4A18-9680-6A1A9780580D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{376A89B5-A8F5-4719-AC11-AE82C3A04A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{376A89B5-A8F5-4719-AC11-AE82C3A04A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{376A89B5-A8F5-4719-AC11-AE82C3A04A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{376A89B5-A8F5-4719-AC11-AE82C3A04A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1344CB93-18C5-4AA3-8584-3CBD2F53CD7E}
+	EndGlobalSection
+EndGlobal

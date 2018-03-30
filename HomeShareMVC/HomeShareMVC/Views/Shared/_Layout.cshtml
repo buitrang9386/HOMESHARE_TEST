@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")    
+    @RenderSection("style", required: false)
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+           @if (ViewBag.Title == "Home Page") {
+               Html.RenderPartial("~/Views/Shared/headerIndexHome.cshtml");
+           }
+           else if (Session["MembreConnected"] == null)
+           {
+               Html.RenderPartial("~/Views/Shared/headerAccessMembre.cshtml");
+           }
+           else if (Session["MembreConnected"] != null)
+           {
+               Html.RenderPartial("~/Views/Shared/headerDeconnectionMembre.cshtml");
+           }
+
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Information", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Newletter", "About", "Home")</li>
+                    <li>@Html.ActionLink("Suivez-nous", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Contactez-nous", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+   
+    @RenderSection("scripts", required: false)
+</body>
+</html>

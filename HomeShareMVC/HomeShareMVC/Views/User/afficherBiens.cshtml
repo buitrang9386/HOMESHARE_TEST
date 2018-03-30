@@ -1,0 +1,22 @@
+﻿@model HomeShareMVC.Models.ListBienEchange
+
+@{
+    ViewBag.Title = "afficherBiens";
+}
+
+<h2>afficherBiens</h2>
+
+<div>
+    <h4>ListBienEchange</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @foreach (var item in Model.listBienEchange)
+    {
+        Html.RenderPartial("~/Views/Shared/BienEchange.cshtml", item);
+    }
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

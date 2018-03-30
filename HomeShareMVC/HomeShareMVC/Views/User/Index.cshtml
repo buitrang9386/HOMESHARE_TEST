@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+
+    <p>Propriétaire</p>
+    @if (@HomeShareMVC.infas.SessionUtils.MembreConnected.PhotoUser != null)
+    {
+        <img src="~/img/@HomeShareMVC.infas.SessionUtils.MembreConnected.PhotoUser" alt="PhotoUser" />
+    }
+    else
+    {
+        <img src="~/img/null.jpg" alt="PhotoUser" />
+    }
+
+    <p>@HomeShareMVC.infas.SessionUtils.MembreConnected.Nom</p>
+    <p>@HomeShareMVC.infas.SessionUtils.MembreConnected.Prenom</p>
+    <form action="/user/modifier" method="post">
+        <button type="submit">Modifier</button>
+    </form>
+
+</div>
+
+<a class="btn" href="/user/afficherBiens">Mes biens</a> <br />
+<a class="btn" href="/user/ajouterBiens">Ajouter un bien</a><br />
+<a class="btn">Les demandes d'échange</a>

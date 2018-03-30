@@ -1,0 +1,12 @@
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\bin\Debug\HomeShare.DAL.dll
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\bin\Debug\HomeShare.DAL.pdb
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.dll
+C:\xampp\htdocs\htdocs\ProjetGestionDonnee\PROJETGESTION_SELF\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.pdb
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\bin\Debug\HomeShare.DAL.dll
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\bin\Debug\HomeShare.DAL.pdb
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.csprojResolveAssemblyReference.cache
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.dll
+C:\xampp\htdocs\ProjetGestionDonnee\TestASP\HomeShareMVC\HomeShare.DAL\obj\Debug\HomeShare.DAL.pdb
